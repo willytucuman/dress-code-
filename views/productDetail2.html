@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo_color_blanco_perla.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div id="navPrincipal" class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand m-3"><img width="200px"
+                        src="../img/logo_color_blanco_perla.png" alt="logo_color_blanco_perla"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                    <form class="d-flex ms-auto me-3 mt-5" role="search">
+                        <button class="border border-0 rounded">
+                            <img width="30px" src="../img/lupa.png" alt="icono_lupa">
+                        </button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+                            maxlength="15">
+
+                        <button type="button" class="btn border-0" id="btn-perfil" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <img width="30px" src="../img/perfil.png" alt="icono_perfil">
+                        </button>
+                        <a href="../views/shoppingDetail.html" class="btn-close-white p-1 me-5 ms-3">
+                            <img width="30px" src="../img/carrito.png" alt="icono_carrito">
+                        </a>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group m-3">
+                                                <label for="username"><i class="bi bi-person"></i> Usuario</label>
+                                                <input type="text" class="form-control" id="username"
+                                                 minlength="5" required   placeholder="Ingrese su usuario" maxlength="40">
+                                            </div>
+                                            <div class="form-group m-3">
+                                                <label for="password"><i class="bi bi-lock"></i> Contraseña</label>
+                                                <input type="password" class="form-control" id="password"
+                                                  required minlength="8"  placeholder="Ingrese su contraseña" >
+                                            </div>
+                                            <div class="form-check mt-3">
+                                                <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                                <label class="form-check-label" for="exampleCheckbox">
+                                                    Recordarme
+                                                </label>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="../views/error404.html">¿Olvidaste tu contraseña?</a>
+                                                <div class="text-lg-start">
+                                                    <h8>Ingresa desde:</h8>
+                                                </div>
+                                                <div>
+                                                    <a href="./views/error404.html"><i class="bi bi-facebook"></i></a>
+                                                    <br />
+                                                    <a href="./views/error404.html"><i class="bi bi-google"></i></i></a>
+                                                </div>
+                                                <h7>¿Aún no tienes una cuenta en Dress code?</h7><br />
+                                                <a href="../views/register.html">Regístrate</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <ul class="nav justify-content-center mt-3 p-3 ">
+            <li class="nav-item">
+                <a id="botones-nav" class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a id="botones-nav" class="nav-link" href="../views/contact.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+                <a id="botones-nav" class="nav-link " href="../views/about.html">NOSOTROS</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="contenedor-p-detail">
+        <h1>Detalle del Producto</h1>
+        <div class="d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 850px">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="../img/productDetail4.png" class="d-block w-100" alt="product_detail4">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="../img/productDetail5.png" class="d-block w-100" alt="product_detail5">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="../img/productDetail6.png" class="d-block w-100" alt="product_detail6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6" id="card_body_productDetail">
+                        <div class="card-body ">
+                            <h5 class="card-title card-detail"><strong>Conjunto Beb Nen Varon</strong></h5>
+                            <hr>
+                            <p class="card-text text-start mt-4 card-detail"><strong>Precio Alquiler: $17.000</strong>
+                            </p>
+                            <p class="card-text text-start mt-4 text-success">Estado: Disponible</p>
+                            <p class="card-text text-start mt-4 card-detail ">En el alquiler del traje incluimos: </p>
+                            <ul>
+                                <li class="text-start mt-3 card-detail">
+                                    Tirantes
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Pantalón liso ocre
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Con/Sin Moño marfíl
+                                </li>
+                                <li class="text-start mt-2 card-detail ">
+                                    Camisa Blanca seda mangas 3/4 o largas
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Portatrajes
+                                </li>
+                            </ul>
+                            <p class="card-text text-start"><small class="text-body-secondary">Categoría: Niños</small>
+                            </p>
+
+                            <p class="card-text text-start mt-4 card-detail">Seleccione el talle: </p>
+
+                            <div class="row justify-content-sm-around">
+                                <div class="col-sm-4 col-md-4 col-6">
+                                    <select class="form-select aria-label= select-talle" Default select example">
+                                        <option value="1">--</option>
+                                        <option value="2">S</option>
+                                        <option value="3">M</option>
+                                        <option value="4">L</option>
+                                        <option value="5">XL</option>
+                                        <option value="6">XXL</option>
+                                    </select>
+                                </div>
+
+                                <a class="btn text-center col-sm-7 col-12 me-sm-1 mt-2 mt-sm-0"
+                                    href="../views/shoppingDetail.html" id="btn-agregar-carrito"><strong>AGREGAR AL
+                                        CARRITO</strong></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3 class="p-5 text-lg-center">Comentarios</h3>
+            <form>
+                <div class="form-group mt-3">
+                    <label for="comentario">
+                        <h5>Dejanos tu comentario:</h5>
+                    </label>
+                    <textarea class="form-control" id="comentario" rows="4" placeholder="Escribir aquí"></textarea>
+                    <p>*Para comentar primero debes iniciar sesión en tu cuenta</p>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <button type="submit" class="btn btn-danger p-2 m-1">Cancelar</button>
+                    <button type="submit" class="btn btn-success p-2 m-1">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="container d- centrar-card">
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+                <div class="row g-0 carta-comentario">
+                    <div class="col-md-3">
+                        <img src="../img/fotodeperfiles.png" class="rounded-circle imgComentarios" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Chuchu Álvarez</h5>
+                            <p class="card-text">Para los 2 casamientos de mis hijos, uds siempre han sido la mejor
+                                eleccion.</p>
+                            <p class="card-text"><small class="text-muted">Hace 5 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d- centrar-card">
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+                <div class="row g-0 carta-comentario">
+                    <div class="col-md-3">
+                        <img src="../img/Perfil-de-usuarioDos.png" class="rounded-circle imgComentarios" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Lolito Sosa</h5>
+                            <p class="card-text">Quiero agradecer el excelente servicio, me ayudaron en todo momento.
+                                Muchísimas gracias!!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Hace 20 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d- centrar-card">
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+                <div class="row g-0 carta-comentario">
+                    <div class="col-md-3">
+                        <img src="../img/Perfil-de-usuarioTres.png" class="rounded-circle imgComentarios" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabina López</h5>
+                            <p class="card-text">La entrega fue más rápida de lo que me dijeron en un principio y sin
+                                problemas;
+                                la calidad del producto acorde a su precio. Muy bien confeccionado mi diseño.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Hace 45 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5 p-5">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../img/logo_color_blanco_perla.png" class="img-thumbnail" alt="logo de Dress code">
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p class="h5">Contacto</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            Horarios de atención:
+                        </li>
+                        <li>
+                            Lun. a Sáb. 9 hs a 13 hs | 17 hs a 21 hs
+                        </li>
+                        <li>
+                            Mail: dresscode@gmail.com
+                        </li>
+                        <li>
+                            Tel. 381-111222
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p class="h5">Redes sociales</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-tiktok"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div div class="col">
+                    <p class="h5">Información</p>
+                    <ul class="list-unstyled">
+                        <li><a href="../views/error404.html" class="infoFooter">Preguntas frecuentes</a></li>
+                        <li>
+                            <a href="../views/error404.html" class="infoFooter">Medios de pago</a>
+                        </li>
+                        <li>
+                            <a href="../views/error404.html" class="infoFooter">Envíos a domicilio</a>
+                        </li>
+                        <li>
+                            <a href="../views/error404.html" class="infoFooter">Retiros en sucursal</a>
+                        </li>
+                        <li>
+                            <a href="../views/error404.html" class="infoFooter">Términos y condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p> &copy; Dress code 2023 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <a href="./error404.html"><button class="buttonFixed rounded-circle"><i class="bi bi-whatsapp"></i></button></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

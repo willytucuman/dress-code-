@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress Code</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/logo_color_blanco_perla.png">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div id="navPrincipal" class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="../index.html" class="navbar-brand m-3"><img width="200px" src="../img/logo_color_blanco_perla.png"
+            alt="logo_color_blanco_perla"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+          <form class="d-flex ms-auto me-3 mt-5" role="search">
+            <button class="border border-0 rounded">
+              <img width="30px" src="../img/lupa.png" alt="icono_lupa">
+            </button>
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" maxlength="15">
+
+            <button type="button" class="btn border-0" id="btn-perfil" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              <img width="30px" src="../img/perfil.png" alt="icono_perfil">
+            </button>
+            <a href="../views/shoppingDetail.html" class="btn-close-white p-1 me-5 ms-3">
+              <img width="30px" src="../img/carrito.png" alt="icono_carrito">
+            </a>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group m-3">
+                        <label for="username"><i class="bi bi-person"></i> Usuario</label>
+                        <input type="text" class="form-control" id="username"
+                         minlength="5" required   placeholder="Ingrese su usuario" maxlength="40">
+                    </div>
+                    <div class="form-group m-3">
+                        <label for="password"><i class="bi bi-lock"></i> Contraseña</label>
+                        <input type="password" class="form-control" id="password"
+                          required minlength="8"  placeholder="Ingrese su contraseña" >
+                    </div>
+                      <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                        <label class="form-check-label" for="exampleCheckbox">
+                          Recordarme
+                        </label>
+                      </div>
+                      <div class="text-center">
+                        <a href="../views/error404.html">¿Olvidaste tu contraseña?</a>
+                        <div class="text-lg-start">
+                          <h8>Ingresa desde:</h8>
+                        </div>
+                        <div>
+                          <a href="./views/error404.html"><i class="bi bi-facebook"></i></a>
+                          <br />
+                          <a href="./views/error404.html"><i class="bi bi-google"></i></i></a>
+                        </div>
+                        <h7>¿Aún no tienes una cuenta en Dress code?</h7><br />
+                        <a href="../views/register.html">Regístrate</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <ul class="nav justify-content-center mt-3 p-3 ">
+      <li class="nav-item">
+        <a id="botones-nav" class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a id="botones-nav" class="nav-link" href="../views/contact.html">CONTACTO</a>
+      </li>
+      <li class="nav-item">
+        <a id="botones-nav" class="nav-link " href="../views/about.html">NOSOTROS</a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <h2 class="text-center mt-5">Registrarse</h2>
+
+    <hr class="m-5">
+    <div class="container">
+      <form>
+        <div class="row justify-content-around mt-5">
+          <div class="form-group col-md-3 text-center">
+            <label for="nombre">NOMBRE</label>
+            <input type="text" class="form-control mt-2 border border-warning" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" placeholder="nombre" required minlength="5" maxlength="20">
+          </div>
+
+          <div class="form-group col-md-3 text-center">
+            <label for="apellido">APELLIDO</label>
+            <input type="text" class="form-control mt-2 border border-warning" required minlength="5" maxlength="20" placeholder="apellido" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+">
+          </div>
+
+          <div class="form-group col-md-3 text-center">
+            <label for="email">EMAIL</label>
+            <input type="email" class="form-control mt-2 border border-warning" required minlength="11" maxlength="20" placeholder="ejemplo@gmail.com">
+          </div>
+        </div>
+
+        <div class="row justify-content-around mt-5">
+          <div class="form-group col-md-3 text-center">
+            <label for="domicilio">DOMICILIO</label>
+            <input type="text" class="form-control mt-2 border border-warning" required minlength="6" maxlength="25">
+          </div>
+
+          <div class="form-group col-md-3 text-center">
+            <label for="tel">TELEFONO</label>
+            <input type="tel" class="form-control mt-2 border border-warning" pattern="[0-9]{10}" required
+              minlength="10" maxlength="11" placeholder="Ejemplo: 3814222333">
+          </div>
+
+          <div class="form-group col-md-3 text-center">
+            <label for="number">CODIGO POSTAL</label>
+            <input type="number" class="form-control mt-2 border border-warning" required>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="form-group col-md-3 text-center">
+            <label for="usuario">USUARIO</label>
+            <input type="text" class="form-control mt-2 border border-warning" required minlength="5" maxlength="15">
+          </div>
+
+          <div class="form-group col-md-3 text-center">
+            <label for="password">CONTRASEÑA</label>
+            <input type="password" class="form-control mt-2 border border-warning" required minlength="5"
+              maxlength="15">
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="row justify-content-center mt-5 mb-3">
+      <div class="text-center col-md-5 col-7">
+        <button class="btn btn-primary" id="crearCuenta" type="submit">CREAR CUENTA</button>
+      </div>
+    </div>
+    </form>
+
+    <div class="row justify-content-center mt-3 mb-5 container-fluid">
+      <button type="button" class="btn mt-3 bg-white border-0 " id="btn-perfil" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        ¿Ya tienes cuenta? <u>Iniciar Sesión</u>
+      </button>
+    </div>
+  </main>
+
+  <footer class="mt-5 p-5">
+    <div class="container" style="text-align: center;">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../img/logo_color_blanco_perla.png" class="img-thumbnail" alt="logo de Dress code">
+        </div>
+        <div class="col-md-4 mt-4">
+          <p class="h5">Contacto</p>
+          <ul class="list-unstyled">
+            <li>
+              Horarios de atención:
+            </li>
+            <li>
+              Lun. a Sáb. 9 hs a 13 hs | 17 hs a 21 hs
+            </li>
+            <li>
+              Mail: dresscode@gmail.com
+            </li>
+            <li>
+              Tel. 381-111222
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 mt-4">
+          <p class="h5">Redes sociales</p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-facebook"></i>
+            </li>
+            <li>
+              <i class="bi bi-instagram"></i>
+            </li>
+            <li>
+              <i class="bi bi-tiktok"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container" style="text-align: center;">
+      <div class="row">
+        <div div class="col">
+          <p class="h5">Información</p>
+          <ul class="list-unstyled">
+            <li><a href="../views/error404.html" class="infoFooter">Preguntas frecuentes</a></li>
+            <li>
+              <a href="../views/error404.html" class="infoFooter">Medios de pago</a>
+            </li>
+            <li>
+              <a href="../views/error404.html" class="infoFooter">Envíos a domicilio</a>
+            </li>
+            <li>
+              <a href="../views/error404.html" class="infoFooter">Retiros en sucursal</a>
+            </li>
+            <li>
+              <a href="../views/error404.html" class="infoFooter">Términos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p> &copy; Dress code 2023 - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <a href="./error404.html"><button class="buttonFixed rounded-circle"><i class="bi bi-whatsapp"></i></button></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
